@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { Orbitron, Inter, Space_Grotesk } from "next/font/google";
+import { Orbitron, Space_Grotesk, Sora } from "next/font/google";
 
 const orbitron = Orbitron({
   subsets: ["latin"],
@@ -14,9 +14,9 @@ const spaceGrotesk = Space_Grotesk({
   weight: ["400", "500", "700"],
 });
 
-const inter = Inter({
+const sora = Sora({
   subsets: ["latin"],
-  weight: ["400", "500", "700"], // 700 para títulos en bold
+  weight: ["400", "500", "700"],
 });
 
 const data = {
@@ -166,7 +166,7 @@ export default function Page() {
 
   return (
     <main
-      className={`${inter.className} min-h-screen bg-[#0b0c0e] text-[#e8e8e8]`}
+      className={`${sora.className} min-h-screen bg-[#0b0c0e] text-[#e8e8e8]`}
     >
       {/* =========================
           NAVBAR
