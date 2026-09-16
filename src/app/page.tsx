@@ -807,6 +807,30 @@ export default function Page() {
           </button>
         </div>
       )}
+<footer className="border-t border-white/10">
+  <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-8 md:px-8">
+
+
+    <a
+      href="https://www.mgldesign.com.ar/"
+      target="_blank"
+      rel="noreferrer"
+      className="inline-flex flex-col items-center gap-3 group"
+    >
+      <span className="text-xs md:text-sm uppercase tracking-[0.12em] text-zinc-400 group-hover:text-zinc-300 transition">
+        Desarrollado por
+      </span>
+
+      <Image
+        src="/presskit/logo-horizontal.png"
+        alt="MGL Design"
+        width={180}
+        height={40}
+        className="h-8 md:h-10 w-auto object-contain opacity-90 group-hover:opacity-100 transition"
+      />
+    </a>
+  </div>
+</footer>
 
       {/* =========================
           ESTILOS
